@@ -1,0 +1,593 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+     /* Prevent font scaling in landscape */
+
+     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+     -moz-text-size-adjust: none; /*Firefox*/
+
+     -ms-text-size-adjust: none;  /*Ie*/
+
+     -o-text-size-adjust: none; /*old versions of Opera*/
+}
+body{
+    font-family: "Noto Serif KR", serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #231F20;
+    background-color: #F5F5F5;
+}
+#wrap{
+    min-width: 1400px;
+    overflow: hidden;
+}
+#top{
+    background-color: #231f20bd;
+    position: fixed;
+    height: 65px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.top_in{
+    width: 1320px;
+    margin: 0 auto;
+}
+.gnb{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.gnb li{
+    padding: 0 25px;
+    color: #AAA3AF;
+    font-size: 16px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.main_text{
+    text-align: center;
+    padding: 80px 0;
+}
+h2{
+    padding-bottom: 30px;
+}
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+#best{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.best_slide{
+    position: relative;
+      height: 580px;
+      padding-bottom: 80px;
+}
+.best_slide .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.best_slide .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#story{
+     background: url(../images/story/story_bg.jpg)no-repeat center;
+     height: 2500px;
+}
+.story_in{
+    color: #F5F5F5;
+    margin: 0 auto;
+    padding: 120px 0;
+   width: 1320px;
+    margin: 0 auto;
+}
+.text_box{
+    padding-top: 30px;
+}
+h1{
+    font-size: 36px;
+}
+.story_in  p{
+    text-align: center;
+}
+.story01{
+    display: flex;
+    justify-content: space-between;
+    background: url(../images/story/story_bg1.jpg) no-repeat center;
+    height: 730px;
+}
+.story01 .text1{
+    padding-top: 180px;
+    display: block;
+    text-align: right;
+}
+.story01 .text2{
+    display: block;
+    padding-top: 450px;
+}
+.story02{
+    display: flex;
+    justify-content: space-between;
+    height: 830px;
+    background: url(../images/story/story_g.png)no-repeat center fixed;
+}
+.story02 .text1{
+    display: block;
+    padding-top: 80px;
+    text-align: right;
+}
+.story02 .text2{
+    display: block;
+    padding-top: 300px;
+}
+.mark{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.mark li{
+    display: block;
+    padding-right: 20px;
+}
+.story03{
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    background: url(../images/story/story_bg3.jpg) no-repeat center;
+}
+.story03 .text1{
+    display: block;
+    padding-top: 180px;
+    text-align: right;
+}
+.story03 .text2{
+    display: block;
+    padding-top: 360px;
+}
+#performance{
+    background: url(../images/배경꽃1.png) no-repeat ;
+  
+}
+.performance_in{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    padding: 150px 0;
+}
+.sl{
+    text-align: center;
+}
+.p_slide{
+    width: 1320px;
+    height: 580px;
+    position: relative;
+}
+.p_slide .swiper {
+      width: 100%;
+      height: 100%;
+}
+
+.p_slide .swiper-slide {
+      padding: 130px 0;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.p_slide .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.p_slide .swiper {
+      margin-left: 10px;
+      margin-right: 80px;
+}
+.p_slide .swiper-button-next, .p_slide .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -60px);
+    left: auto;
+}
+.explanation1{
+    width: 1320px;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 60px;
+    background:url(../images/거품.png) no-repeat right top 30px;
+}
+.explanation1 li p{
+    display: block;
+    width: 800px;
+    padding-top: 80px;
+    font-size: 18px;
+}
+.explanation1 li img{
+    padding-bottom: 160px;
+    box-sizing: border-box;
+}
+.explanation2{
+    width: 1320px;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 60px;
+    background:url(../images/로션제형.png) no-repeat right top 30px;
+}
+.explanation2 li p{
+    display: block;
+    width: 800px;
+    padding-top: 80px;
+    font-size: 18px;
+}
+.explanation2 li img{
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 10px;
+}
+.explanation3{
+    width: 1320px;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 60px;
+    background:url(../images/향기이미지\(이너퍼퓸\).png) no-repeat right top 30px;
+}
+.explanation3 li p{
+    display: block;
+    width: 800px;
+    padding-top: 80px;
+    font-size: 18px;
+}
+.explanation3 li img{
+    padding-bottom: 230px;
+    box-sizing: border-box;
+    position: relative;
+}
+span{
+    display: block;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.flower1{
+    width: 454px;
+    height: 625px;
+    background: url(../images/배경꽃1.png) no-repeat;
+}
+.flower2{
+    width: 454px;
+    height: 625px;
+   
+    background: url(../images/배경꽃2.png) no-repeat;
+}
+.incense{
+    padding-top: 235px;
+   
+}
+.incense_f{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.incense_f .round{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 177px;
+    height: 36px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin-top: 130px;
+}
+.shop_in{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+#shop{
+   padding: 120px 0;
+}
+.lnb_wrap{
+    width: 400px;
+    text-align: center;
+}
+.product1{
+    width: 493px;
+    /* align-items: */
+}
+.product2{
+    width: 493px;
+    align-items:flex-end;
+}
+.img{
+    padding-top: 300px;
+}
+/* tab */
+#tab{
+    width: 1320px;
+    margin: 0 auto;
+}
+.clearfix{
+    padding: 60px 0;
+    position: relative;
+    width: 360px;
+    text-align: center;
+}
+.clearfix li a{
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.clearfix li a.selected{
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+.tab_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+.tab_img img{
+    width: 215px;
+    display: block;
+}
+.number{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    font-size: 24px;
+    display: none;
+}
+.see .number{
+    display: block;
+}
+.innertab{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+.tablink{
+    width: 360px;
+    height: 1450px;
+}
+.iso-box-wrapper{
+    width: 820px;
+    height:1450px;
+    display: flex;
+}
+.iso-box{
+    width: 50%;
+    padding-bottom: 100px;
+}
+.text{
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 50px;
+}   
+.name{
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.price{
+    display: flex;
+}
+.price li{
+    display: block;
+    padding-right: 13px;
+}
+.won{
+    text-decoration:line-through;
+}
+.sale{
+    font-size: 16px;
+    font-weight: 700;
+}
+.percent{
+    font-size: 16px;
+    color: rgb(218, 151, 151);
+}
+.centerimg{
+    height: 565px;
+    margin: 0 auto;
+    background: url(../images/centerimg_bg.png) no-repeat center;
+    margin-bottom: 80px;
+}
+.centertext{
+    height: 565px;
+    text-align: center;
+    color: #f5f5f5a4;
+    font-size: 24px;
+    padding-top: 270px;
+}
+#how{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.how_img{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.how_text{
+     width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.step{
+    display: flex;
+    justify-content: space-between;
+}
+.cyc{
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: 18px;
+}
+.rule{
+    padding-top: 20px;
+}
+#qna{
+   padding-top: 120px;
+   padding-bottom: 180px;
+}
+.qna_in{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 165px;
+    padding-bottom: 180px;
+}
+#tab_2{
+    width: 680px;
+    margin: 0px auto;
+}
+.H1{
+    padding-top: 350px;
+    font-size: 54px;
+}
+.board{
+    display: flex;
+    position: relative;
+    height: 600px;
+}
+.board li{
+   padding-right: 50px;
+   width: 165px;
+}
+.board li a{
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-color: #EAEAEA;
+    text-align: center;
+    border-radius: 100%;
+    color: #231F20;
+    
+}
+.board> li.on> a{
+    background-color: #D9D9D9;
+}
+.board> li> div{
+    height: 0px;
+    overflow: hidden;
+}
+.board> li.on> div{
+    /* ���讌��� ����position */
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    padding: 80px 30px;
+    box-sizing: border-box;
+    height: 774px;
+    font-size: 16px;
+}
+.board a img{
+    padding: 20px;
+}
+
+#end_img{
+    background: url(../images/footer_bg.png) no-repeat center;
+    height: 755px;
+    
+}
+#footer{
+    background-color: #231F20;
+    height: 380px;
+    color: #F5F5F5;
+   
+}
+.footer_in{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 77px;
+}
+.community h2{
+    width: 290px;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.c_icon{
+    display: flex;
+    justify-content: space-between;
+}
+.costom{
+    width: 320px;
+    text-align: center;
+    padding-top: 60px;
+}
+.center_n{
+
+}
+.profile{
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    color: #F5F5F5;
+    background-color: #231F20;
+     border-top: #f5f5f554 solid 1px;
+     height: 80px;
+    font-size: 13px;
+}
+.about_in{
+     display: flex;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.about ul{
+    display: flex;
+}
+.about ul li{
+    display: block;
+    padding-right: 20px;
+}
