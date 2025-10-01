@@ -1887,7 +1887,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(79, 87, 98, 0.8);
+  background: rgba(226, 187, 195, 0.8);
   transition: all 0.5s;
 }
 
@@ -2023,8 +2023,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
-  font-weight: 400;
+  color: #000;
+  font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
   outline: none;
@@ -2284,7 +2284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/banner2.jpg);
+  background: url(../img/banner_1.jpg);
   background-size: cover;
 }
 
@@ -2300,7 +2300,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-position: 50% 90% 50% 50%;
   }
 }
-
+.banner_2{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 120px;
+  left: 720px;
+   perspective: 2000px;
+}
+.banner_2 p{
+    
+    /* A keyframe */
+    transform: rotateX(0deg);
+    transition: transform 1.8s;
+}
+.banner_2:hover p{
+    /* B keyframe */
+    transform: rotateX(360deg);
+}
+.banner_2 p img{
+    display: block;
+}
 .banner-content {
   margin-top: -250px;
 }
@@ -2370,6 +2390,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .video-left {
   padding-left: 10%;
+  
 }
 
 .video-left h6 {
@@ -2377,16 +2398,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 2px;
   color: #869cac;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .video-left h1 {
+  padding-top: 10px;
   padding-bottom: 20px;
+  font-size: 28px;
 }
 
 .video-left p span {
   color: #000;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 16px;
+  
 }
 
 @media (max-width: 960px) {
@@ -2404,7 +2429,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .video-right .overlay-bg {
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.78);
+  background: url(../img/Web_guide_2.jpg);
+
 }
 
 .video-right .play-btn {
@@ -2448,14 +2474,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
   width: 100%;
 }
-
+.video-sec-area{
+  padding-bottom: 200px;
+}
 .review-area {
-  background-color: #869cac;
+  background: url(../img/Web_guide_32.jpg) no-repeat center;
+  height: 1327px;
   color: #fff;
 }
 
 .review-area h1, .review-area h4 {
   color: #fff;
+  padding-top: 30px;
 }
 
 .single-review .title {
